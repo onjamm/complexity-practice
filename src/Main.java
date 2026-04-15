@@ -137,7 +137,8 @@ public class Main {
   }
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // Linear Growth - O(n) 
+  //Where n represents the length of the array of characters
   public static void printCharacters(char[] chars) {
     for (int i = 0; i < chars.length; i++) {
       char character = chars[i];
