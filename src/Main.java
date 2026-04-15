@@ -63,7 +63,11 @@ public class Main {
 
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // Linear growth - O(n) 
+  //Where n represents the # of factorials computed
+  //Though when I look at it, it's not actually a factorial say 5! = 5 x 4 x 3 x 2 x 1
+  //This is actually doing n * n , say n was 5, after the first iteration when it ran again
+  //so the behavior is actually n to the nth power 
   public static int computeFactorial(int n) {
     int result = 1;
     for(int i = 1; i <= n; i++) {
