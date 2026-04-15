@@ -90,7 +90,8 @@ public class Main {
 
   // assume that each String is bounded by a constant length
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // Linear growth - O(n) - (arr.contains(target) is a O(n) operation)
+  //Where n represents the amount of numbers in the array
   public static void checkIfContainedArrayList(ArrayList<String> arr, String target) {
     if (arr.contains(target)) {
         System.out.println(target + " is present in the list");
