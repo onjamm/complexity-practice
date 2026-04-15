@@ -78,6 +78,8 @@ public class Main {
 
   // Assume that the largest number is no bigger than the length
   // of the array
+  //Quadratic Growth O(n^2) - because for each nums is O(n), and computeFactorial is O(n)
+  //Where n represents the amount of numbers to be computed
   public static void computeAllFactorials(int[] nums) {
     for(int num : nums) {
         int result = computeFactorial(num);
