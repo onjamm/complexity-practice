@@ -6,7 +6,7 @@ import java.util.Set;
 public class Main {
 
   // The time complexity is:
-  // O(n^2) or should I say O(x^2)
+  // O(n^2) or should I say O(x^2) (Adding this while doing #2: Quadratic growth)
   //with x representing the size of the times table
   public static void timesTable(int x) {
     for(int i = 1; i <= x; i++) {
@@ -18,7 +18,7 @@ public class Main {
   }
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // Linear growth - O(n) - where n represents the amount of letters in the word
   public static void printLetters(String word) {
     char[] letters = word.toCharArray();
 
