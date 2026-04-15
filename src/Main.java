@@ -119,7 +119,8 @@ public class Main {
 
   // assume that each String is bounded by a constant length
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // Linear growth - 2n which simplifys to O(n) - Where n represents the length of either array
+  // (HashSet.contains() is a O(1) operation and in Big O we drop the constants)
   public static boolean containsOverlap2(String[] wordsA, String[] wordsB) {
     Set<String> wordsSet = new HashSet<>();
     for(String word : wordsA) {
