@@ -199,7 +199,8 @@ public class Main {
   // What is the time complexity of this method?
   // assume that each String is bounded by a constant length
   // (assume the set and list have the same number of elements)
-  // YOUR ANSWER HERE
+  // Quadratic growth - O(n^2) 
+  //Where n represents the length of either data structure (considering they are equal in length)
   public static boolean hasCommon(HashSet<String> wordSet, ArrayList<String> wordList) {
     for(String word : wordSet) {
       if(wordList.contains(word)) {
@@ -212,8 +213,15 @@ public class Main {
   // Do not change the datatype of wordSet or wordList.
   // assume that each String is bounded by a constant length
   // What is the time complexity of your new solution?
-  // YOUR ANSWER HERE
+  // Linear growth - O(n) - (HashSet.contains() operation is O(1))
+  //Where n represents the length of the words in the wordlist 
   public static boolean hasCommonEfficient(HashSet<String> wordSet, ArrayList<String> wordList) {
+    for(String word : wordList) {
+      if(wordSet.contains(word)) {
+        return true;
+      }
+    }
+    
     return false;
   }
 
